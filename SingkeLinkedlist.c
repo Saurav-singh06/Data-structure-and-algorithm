@@ -81,12 +81,12 @@ void delete_end()
 {
     struct node *temp;
     temp=first;
-    if(first=NULL)
+    if(first==NULL)
     {
         printf("List is Empty\n");
         return;
         }
-        if(temp->next=NULL)
+        if(temp->next==NULL)
         {
             printf("%s%s%s%d%d\n",temp->usn,temp->name,temp->branch,temp->sem,temp->phno);
             free(temp);
